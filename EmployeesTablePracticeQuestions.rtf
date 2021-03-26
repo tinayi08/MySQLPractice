@@ -22,4 +22,19 @@ select count(emp_no), title\
 from titles\
 group by title;\
 \
+\'97A query that will return the total number of employees\
+select count(emp_no) as numEmployees \
+from employees;\
+\
+\'97A query that will return the total number of departments\
+select count(dept_name)\
+from departments;\
+\
+\'97A query that will return the total number of employees within each department\
+select count(emp_No), dept_no\
+from dept_emp\
+group by dept_no;\
+\
+\'97A query that will return the 5 employees who worked at the company the longest\
+\
 }
